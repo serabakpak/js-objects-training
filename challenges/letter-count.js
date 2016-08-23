@@ -31,3 +31,19 @@
 */
 
 // YOUR CODE HERE
+function letterCount(string) {
+  var dict = {};
+  
+  for (var i = 0; i  < string.length; i++) {
+    letter = string[i];
+    if (dict[letter] === undefined) {
+        dict[letter] = 1;
+    }
+    else {
+        dict[letter] += 1;
+    }
+  }
+  return dict;
+}
+
+letterCount('seracha');
