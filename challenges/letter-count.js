@@ -46,4 +46,4 @@ function letterCount(string) {
   return dict;
 }
 
-letterCount('seracha');
+console.log(letterCount('seracha is the best'));
