@@ -45,3 +45,22 @@
 */
 
 // YOUR CODE HERE
+
+function parseQueryString(queryStr) {
+    var stringOfPairs = queryStr.split('&');
+    console.log(stringOfPairs);
+    var object = {};
+
+    stringOfPairs.forEach(function (element){
+      var arrayOfPair = element.split('=');
+      object[arrayOfPair[0]] = arrayOfPair[1];
+    });
+    
+    return object;
+
+}
+
+console.log(parseQueryString("a=apple&b=beet&b=blueberry&c=&d=10"));
+
+
+
