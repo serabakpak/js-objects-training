@@ -34,3 +34,17 @@
 */
 
 // YOUR CODE HERE
+function daysUntilDate (futureDate) {
+  var nowInMs = Date.now();
+  var futureInMs = Date.parse(futureDate);
+  var diffInMs = futureInMs - nowInMs;
+  var diffInDays = diffInMs / 1000 / 60 / 60 / 24;
+  return Math.ceil(diffInDays);
+
+}
+
+console.log(daysUntilDate('8/25/2016'));
+
+function birthdayReminder (arrayOfObj) {
+  
+}
